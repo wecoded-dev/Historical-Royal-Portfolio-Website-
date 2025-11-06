@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra Premium Classical Portfolio</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Cormorant:wght@300;400;600;700&family=MedievalSharp&family=UnifrakturMaguntia&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="royal-spinner">
+                <i class="fas fa-crown"></i>
+            </div>
+            <p class="preloader-text">Loading Royal Heritage...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top royal-navbar">
+        <div class="container">
+            <a class="navbar-brand royal-brand" href="#">
+                <i class="fas fa-crown me-2"></i>
+                <span class="brand-text">Royal Heritage</span>
+            </a>
+            <button class="navbar-toggler royal-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto royal-nav">
+                    <li class="nav-item">
+                        <a class="nav-link royal-nav-link" href="#home">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link royal-nav-link" href="#about">
+                            <i class="fas fa-scroll me-1"></i>Lineage
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link royal-nav-link" href="#services">
+                            <i class="fas fa-gem me-1"></i>Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link royal-nav-link" href="#portfolio">
+                            <i class="fas fa-chess-rook me-1"></i>Collections
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link royal-nav-link" href="#skills">
+                            <i class="fas fa-award me-1"></i>Expertise
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link royal-nav-link" href="#testimonials">
+                            <i class="fas fa-quote-right me-1"></i>Testimonials
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link royal-nav-link" href="#contact">
+                            <i class="fas fa-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-particles" id="hero-particles"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-video-bg">
+            <div class="video-placeholder"></div>
+        </div>
+        
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto text-center hero-content">
+                    <div class="hero-badge animate__animated animate__fadeInDown">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h1 class="hero-title animate__animated animate__fadeInUp">
+                        Lord Alexander <span class="highlight-royal">Windsor</span>
+                    </h1>
+                    <p class="hero-subtitle animate__animated animate__fadeIn animate__delay-1s">
+                        Keeper of Ancient Royal Traditions & Heritage
+                    </p>
+                    <p class="hero-description animate__animated animate__fadeIn animate__delay-2s">
+                        Descendant of the Windsor lineage with over 400 years of documented ancestry. 
+                        Preserving the legacy of royal heritage through historical artifacts, 
+                        traditional craftsmanship, and ancient documentation.
+                    </p>
+                    <div class="hero-actions animate__animated animate__fadeInUp animate__delay-3s">
+                        <a href="#portfolio" class="btn btn-royal-primary me-3">
+                            <i class="fas fa-gem me-2"></i>Explore Collections
+                        </a>
+                        <a href="#contact" class="btn btn-royal-secondary">
+                            <i class="fas fa-scroll me-2"></i>Royal Correspondence
+                        </a>
+                    </div>
+                    <div class="hero-scroll-indicator animate__animated animate__fadeIn animate__delay-4s">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animated Background Elements -->
+        <div class="hero-decoration hero-crown-1">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="hero-decoration hero-crown-2">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="hero-decoration hero-shield">
+            <i class="fas fa-shield-alt"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Royal Lineage & Heritage</h2>
+                <p class="section-subtitle">Ancient Bloodline Dating Back Centuries</p>
+                <div class="section-divider">
+                    <i class="fas fa-crown"></i>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-image-container">
+                        <div class="about-main-image royal-frame">
+                            <img src="https://images.unsplash.com/photo-1541336032412-2048a678540d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Royal Portrait" class="img-fluid">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <h4>Lord Alexander Windsor</h4>
+                                    <p>18th Generation</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-badge">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-content">
+                        <h3 class="about-heading">Ancient Windsor Dynasty</h3>
+                        <p class="about-text">
+                            The Windsor lineage traces its origins to the early 16th century, with documented 
+                            ancestry spanning over four centuries of European royalty. Our family has been 
+                            entrusted with preserving the cultural heritage and traditional craftsmanship 
+                            techniques that define royal excellence.
+                        </p>
+                        
+                        <div class="lineage-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">400+</div>
+                                <div class="stat-label">Years of Heritage</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">18</div>
+                                <div class="stat-label">Generations</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">150+</div>
+                                <div class="stat-label">Artifacts Preserved</div>
+                            </div>
+                        </div>
+
+                        <div class="heritage-features">
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt feature-icon"></i>
+                                <div class="feature-content">
+                                    <h5>Royal Protection</h5>
+                                    <p>Guarding ancient artifacts and traditions</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-book feature-icon"></i>
+                                <div class="feature-content">
+                                    <h5>Historical Documentation</h5>
+                                    <p>Preserving royal manuscripts and records</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-hammer feature-icon"></i>
+                                <div class="feature-content">
+                                    <h5>Traditional Craftsmanship</h5>
+                                    <p>Mastering ancient artisan techniques</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Family Timeline -->
+            <div class="family-timeline" data-aos="fade-up">
+                <h3 class="timeline-title">Windsor Family Timeline</h3>
+                <div class="timeline-container">
+                    <div class="timeline">
+                        <div class="timeline-item" data-year="1580">
+                            <div class="timeline-content">
+                                <h4>Foundation</h4>
+                                <p>Windsor family established in royal court</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-year="1650">
+                            <div class="timeline-content">
+                                <h4>Artisan Guild</h4>
+                                <p>Founded royal artisan guild</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-year="1780">
+                            <div class="timeline-content">
+                                <h4>Museum Establishment</h4>
+                                <p>Windsor Heritage Museum founded</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-year="2023">
+                            <div class="timeline-content">
+                                <h4>Modern Preservation</h4>
+                                <p>Continuing royal heritage traditions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Royal Services</h2>
+                <p class="section-subtitle">Premium Heritage Preservation</p>
+                <div class="section-divider">
+                    <i class="fas fa-gem"></i>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-monument"></i>
+                        </div>
+                        <h4 class="service-title">Artifact Restoration</h4>
+                        <p class="service-description">
+                            Expert restoration of historical artifacts using traditional methods 
+                            and materials to preserve their original beauty and significance.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Historical Analysis</li>
+                            <li><i class="fas fa-check"></i> Material Preservation</li>
+                            <li><i class="fas fa-check"></i> Traditional Techniques</li>
+                        </ul>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                        <h4 class="service-title">Manuscript Preservation</h4>
+                        <p class="service-description">
+                            Specialized preservation of ancient manuscripts, documents, and 
+                            royal correspondence using archival-quality materials.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Digital Archiving</li>
+                            <li><i class="fas fa-check"></i> Climate Control</li>
+                            <li><i class="fas fa-check"></i> Conservation Framing</li>
+                        </ul>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h4 class="service-title">Royal Consultancy</h4>
+                        <p class="service-description">
+                            Expert consultancy on royal traditions, heritage preservation, 
+                            and historical accuracy for media and educational projects.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Historical Accuracy</li>
+                            <li><i class="fas fa-check"></i> Protocol Guidance</li>
+                            <li><i class="fas fa-check"></i> Heritage Planning</li>
+                        </ul>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Royal Collections</h2>
+                <p class="section-subtitle">Precious Heritage Artifacts</p>
+                <div class="section-divider">
+                    <i class="fas fa-chess-rook"></i>
+                </div>
+            </div>
+
+            <!-- Portfolio Filter -->
+            <div class="portfolio-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="*">All Collections</button>
+                <button class="filter-btn" data-filter=".manuscripts">Manuscripts</button>
+                <button class="filter-btn" data-filter=".artifacts">Artifacts</button>
+                <button class="filter-btn" data-filter=".jewelry">Jewelry</button>
+                <button class="filter-btn" data-filter=".art">Art</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Portfolio items will be loaded dynamically via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Royal Expertise</h2>
+                <p class="section-subtitle">Mastery in Heritage Preservation</p>
+                <div class="section-divider">
+                    <i class="fas fa-award"></i>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="skills-content">
+                        <h3 class="skills-heading">Ancient Craftsmanship Mastery</h3>
+                        <p class="skills-description">
+                            Through generations of dedicated practice and preservation of traditional 
+                            techniques, we maintain the highest standards of royal craftsmanship.
+                        </p>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Historical Research</span>
+                                <span class="skill-percentage">98%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="98"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Artifact Restoration</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Traditional Craftsmanship</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="expertise-cards">
+                        <div class="expertise-card">
+                            <div class="expertise-icon">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <div class="expertise-content">
+                                <h4>Scientific Analysis</h4>
+                                <p>Advanced techniques for artifact authentication</p>
+                            </div>
+                        </div>
+
+                        <div class="expertise-card">
+                            <div class="expertise-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="expertise-content">
+                                <h4>Art Conservation</h4>
+                                <p>Preserving artistic heritage for future generations</p>
+                            </div>
+                        </div>
+
+                        <div class="expertise-card">
+                            <div class="expertise-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="expertise-content">
+                                <h4>Documentation</h4>
+                                <p>Comprehensive historical record keeping</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Royal Testimonials</h2>
+                <p class="section-subtitle">Words from Distinguished Patrons</p>
+                <div class="section-divider">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+            </div>
+
+            <div class="testimonials-slider swiper-container" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <!-- Testimonials will be loaded dynamically -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Royal Correspondence</h2>
+                <p class="section-subtitle">Send Your Noble Message</p>
+                <div class="section-divider">
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form-container royal-frame" data-aos="zoom-in">
+                        <form id="royalContactForm" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name" class="form-label">Your Noble Name</label>
+                                        <input type="text" id="name" name="name" class="form-control royal-input" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Royal Email</label>
+                                        <input type="email" id="email" name="email" class="form-control royal-input" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject of Missive</label>
+                                <input type="text" id="subject" name="subject" class="form-control royal-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Your Royal Message</label>
+                                <textarea id="message" name="message" rows="6" class="form-control royal-textarea" required></textarea>
+                            </div>
+
+                            <div class="form-actions text-center">
+                                <button type="submit" class="btn btn-royal-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Royal Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="royal-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <i class="fas fa-crown"></i>
+                        <span>Royal Heritage</span>
+                    </div>
+                    <p class="footer-description">
+                        Preserving royal heritage and traditions for future generations through 
+                        expert craftsmanship and historical preservation.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Lineage</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Collections</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Artifact Restoration</a></li>
+                        <li><a href="#">Manuscript Preservation</a></li>
+                        <li><a href="#">Royal Consultancy</a></li>
+                        <li><a href="#">Heritage Planning</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Windsor Castle Estate, Berkshire, UK</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+44 20 7946 0958</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>heritage@royalwindsor.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="copyright">&copy; 2023 Royal Heritage. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-bottom-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                            <a href="#">Royal Decree</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <div class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/particles-config.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
