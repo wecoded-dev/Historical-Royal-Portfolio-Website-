@@ -1,0 +1,204 @@
+/* Ultra-Responsive Design System */
+
+/* Container queries for component-level responsiveness */
+@container (max-width: 400px) {
+    .card {
+        padding: 1rem;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Advanced mobile-first breakpoints */
+@media (max-width: 480px) {
+    .hero-section {
+        min-height: 100vh;
+        padding: 2rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .royal-navbar {
+        padding: 1rem 0;
+    }
+    
+    .royal-brand {
+        font-size: 1.5rem;
+    }
+}
+
+/* Tablet optimizations */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .lineage-stats {
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+/* Large desktop enhancements */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-title {
+        font-size: 6rem;
+    }
+    
+    .section-title {
+        font-size: 4rem;
+    }
+}
+
+/* Print styles for royal documentation */
+@media print {
+    .royal-navbar,
+    .hero-scroll-indicator,
+    .scroll-to-top,
+    .social-links,
+    .btn {
+        display: none !important;
+    }
+    
+    .hero-section {
+        min-height: auto;
+        padding: 2rem 0;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+        font-size: 12pt;
+    }
+    
+    .royal-frame,
+    .service-card {
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+        break-inside: avoid;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: black !important;
+    }
+}
+
+/* High-DPI display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-title {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .royal-frame {
+        border-width: 2px;
+    }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --dark-bg: #0A0A0A;
+        --parchment: #F5EEDC;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .royal-hover-lift:hover {
+        transform: none;
+    }
+    
+    .portfolio-overlay {
+        opacity: 1;
+        background: linear-gradient(transparent, rgba(10, 10, 10, 0.9));
+    }
+}
+
+/* Landscape mobile optimizations */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-section {
+        min-height: 150vh;
+    }
+    
+    .hero-content {
+        padding: 2rem 0;
+    }
+}
+
+/* Ultra-wide screen support */
+@media (min-width: 2000px) {
+    .container {
+        max-width: 1800px;
+    }
+    
+    .hero-title {
+        font-size: 8rem;
+    }
+}
+
+/* Performance optimizations for low-end devices */
+@media (max-width: 320px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .btn-royal-primary,
+    .btn-royal-secondary {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* CSS Grid fallbacks */
+@supports not (display: grid) {
+    .portfolio-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    
+    .portfolio-item {
+        flex: 1 1 300px;
+    }
+}
+
+/* Variable fonts optimization */
+@supports (font-variation-settings: normal) {
+    body {
+        font-family: 'Cormorant Variable', var(--font-cormorant);
+    }
+}
